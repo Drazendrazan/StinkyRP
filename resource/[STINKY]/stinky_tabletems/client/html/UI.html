@@ -1,0 +1,156 @@
+<html>
+
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<!--script src="nui://game/ui/jquery.js" type="text/javascript"></script-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script>
+		var MD5 = function (d) { result = M(V(Y(X(d), 8 * d.length))); return result.toLowerCase() }; function M(d) { for (var _, m = "0123456789ABCDEF", f = "", r = 0; r < d.length; r++)_ = d.charCodeAt(r), f += m.charAt(_ >>> 4 & 15) + m.charAt(15 & _); return f } function X(d) { for (var _ = Array(d.length >> 2), m = 0; m < _.length; m++)_[m] = 0; for (m = 0; m < 8 * d.length; m += 8)_[m >> 5] |= (255 & d.charCodeAt(m / 8)) << m % 32; return _ } function V(d) { for (var _ = "", m = 0; m < 32 * d.length; m += 8)_ += String.fromCharCode(d[m >> 5] >>> m % 32 & 255); return _ } function Y(d, _) { d[_ >> 5] |= 128 << _ % 32, d[14 + (_ + 64 >>> 9 << 4)] = _; for (var m = 1732584193, f = -271733879, r = -1732584194, i = 271733878, n = 0; n < d.length; n += 16) { var h = m, t = f, g = r, e = i; f = md5_ii(f = md5_ii(f = md5_ii(f = md5_ii(f = md5_hh(f = md5_hh(f = md5_hh(f = md5_hh(f = md5_gg(f = md5_gg(f = md5_gg(f = md5_gg(f = md5_ff(f = md5_ff(f = md5_ff(f = md5_ff(f, r = md5_ff(r, i = md5_ff(i, m = md5_ff(m, f, r, i, d[n + 0], 7, -680876936), f, r, d[n + 1], 12, -389564586), m, f, d[n + 2], 17, 606105819), i, m, d[n + 3], 22, -1044525330), r = md5_ff(r, i = md5_ff(i, m = md5_ff(m, f, r, i, d[n + 4], 7, -176418897), f, r, d[n + 5], 12, 1200080426), m, f, d[n + 6], 17, -1473231341), i, m, d[n + 7], 22, -45705983), r = md5_ff(r, i = md5_ff(i, m = md5_ff(m, f, r, i, d[n + 8], 7, 1770035416), f, r, d[n + 9], 12, -1958414417), m, f, d[n + 10], 17, -42063), i, m, d[n + 11], 22, -1990404162), r = md5_ff(r, i = md5_ff(i, m = md5_ff(m, f, r, i, d[n + 12], 7, 1804603682), f, r, d[n + 13], 12, -40341101), m, f, d[n + 14], 17, -1502002290), i, m, d[n + 15], 22, 1236535329), r = md5_gg(r, i = md5_gg(i, m = md5_gg(m, f, r, i, d[n + 1], 5, -165796510), f, r, d[n + 6], 9, -1069501632), m, f, d[n + 11], 14, 643717713), i, m, d[n + 0], 20, -373897302), r = md5_gg(r, i = md5_gg(i, m = md5_gg(m, f, r, i, d[n + 5], 5, -701558691), f, r, d[n + 10], 9, 38016083), m, f, d[n + 15], 14, -660478335), i, m, d[n + 4], 20, -405537848), r = md5_gg(r, i = md5_gg(i, m = md5_gg(m, f, r, i, d[n + 9], 5, 568446438), f, r, d[n + 14], 9, -1019803690), m, f, d[n + 3], 14, -187363961), i, m, d[n + 8], 20, 1163531501), r = md5_gg(r, i = md5_gg(i, m = md5_gg(m, f, r, i, d[n + 13], 5, -1444681467), f, r, d[n + 2], 9, -51403784), m, f, d[n + 7], 14, 1735328473), i, m, d[n + 12], 20, -1926607734), r = md5_hh(r, i = md5_hh(i, m = md5_hh(m, f, r, i, d[n + 5], 4, -378558), f, r, d[n + 8], 11, -2022574463), m, f, d[n + 11], 16, 1839030562), i, m, d[n + 14], 23, -35309556), r = md5_hh(r, i = md5_hh(i, m = md5_hh(m, f, r, i, d[n + 1], 4, -1530992060), f, r, d[n + 4], 11, 1272893353), m, f, d[n + 7], 16, -155497632), i, m, d[n + 10], 23, -1094730640), r = md5_hh(r, i = md5_hh(i, m = md5_hh(m, f, r, i, d[n + 13], 4, 681279174), f, r, d[n + 0], 11, -358537222), m, f, d[n + 3], 16, -722521979), i, m, d[n + 6], 23, 76029189), r = md5_hh(r, i = md5_hh(i, m = md5_hh(m, f, r, i, d[n + 9], 4, -640364487), f, r, d[n + 12], 11, -421815835), m, f, d[n + 15], 16, 530742520), i, m, d[n + 2], 23, -995338651), r = md5_ii(r, i = md5_ii(i, m = md5_ii(m, f, r, i, d[n + 0], 6, -198630844), f, r, d[n + 7], 10, 1126891415), m, f, d[n + 14], 15, -1416354905), i, m, d[n + 5], 21, -57434055), r = md5_ii(r, i = md5_ii(i, m = md5_ii(m, f, r, i, d[n + 12], 6, 1700485571), f, r, d[n + 3], 10, -1894986606), m, f, d[n + 10], 15, -1051523), i, m, d[n + 1], 21, -2054922799), r = md5_ii(r, i = md5_ii(i, m = md5_ii(m, f, r, i, d[n + 8], 6, 1873313359), f, r, d[n + 15], 10, -30611744), m, f, d[n + 6], 15, -1560198380), i, m, d[n + 13], 21, 1309151649), r = md5_ii(r, i = md5_ii(i, m = md5_ii(m, f, r, i, d[n + 4], 6, -145523070), f, r, d[n + 11], 10, -1120210379), m, f, d[n + 2], 15, 718787259), i, m, d[n + 9], 21, -343485551), m = safe_add(m, h), f = safe_add(f, t), r = safe_add(r, g), i = safe_add(i, e) } return Array(m, f, r, i) } function md5_cmn(d, _, m, f, r, i) { return safe_add(bit_rol(safe_add(safe_add(_, d), safe_add(f, i)), r), m) } function md5_ff(d, _, m, f, r, i, n) { return md5_cmn(_ & m | ~_ & f, d, _, r, i, n) } function md5_gg(d, _, m, f, r, i, n) { return md5_cmn(_ & f | m & ~f, d, _, r, i, n) } function md5_hh(d, _, m, f, r, i, n) { return md5_cmn(_ ^ m ^ f, d, _, r, i, n) } function md5_ii(d, _, m, f, r, i, n) { return md5_cmn(m ^ (_ | ~f), d, _, r, i, n) } function safe_add(d, _) { var m = (65535 & d) + (65535 & _); return (d >> 16) + (_ >> 16) + (m >> 16) << 16 | 65535 & m } function bit_rol(d, _) { return d << _ | d >>> 32 - _ }
+
+		var iframeReady = false;
+		$(function () {
+			function pad(str, max) {
+				str = str.toString();
+				return str.length < max ? pad("0" + str, max) : str;
+			}
+
+			/* open the UI for user */
+			window.addEventListener('message', function (event) {
+				if (event.data.type == "open") {
+					if (!iframeReady || event.data.update) {
+						$('#iframebaza iframe').attr('src', 'http://contabo.primerp.pl/lspd/Baza-Danych');
+						if (!iframeReady) {
+							$('#iframedispatch iframe').attr('src', 'https://docs.google.com/spreadsheets/d/13f9m63mNva70S_8r0qxGSBzWqkL_OVNeQV60f7zM6cU/edit#gid=1345974983');
+							iframeReady = true;
+						}
+					}
+
+					$('.btn-group').css('display', 'block');
+					$('body').css('display', 'block');
+					$('html').css('display', 'block');
+
+					$('#menujail').hide();
+					$('#menukartoteka').hide();
+					$('#menumandat').hide();
+				} else if (event.data.type == "close") {
+					$('.btn-group').css('display', 'none');
+					$('body').css('display', 'none');
+					$('html').css('display', 'none');
+					$('#mySidenav').css('width', '0');
+					$('#iframebaza').css('display', 'none');
+				
+					$('#iframedispatch').css('display', 'none');
+				}
+
+				if (event.data.type == "kartoteka") {
+					var dt = new Date(event.data.dataaa);
+					$("#linia").append("<tr><td>" + event.data.imie + "</td><td>" + event.data.nazwisko + "</td><td>" + pad(dt.getDate(), 2) + "." + pad(dt.getMonth() + 1, 2) + "." + dt.getFullYear() + " " + dt.getHours() + ":" + pad(dt.getMinutes(), 2) + "</td><td>" + event.data.grzywna + "</td><td>" + event.data.ilosc_lat + "</td><td><button class='reason'>Pokaż</button></td></tr><tr style='display:none;' class='details'><td colspan='6'>" + event.data.powod + "</td></tr>");
+				}
+			});
+		});	
+	</script>
+</head>
+
+    <body>	
+		<div id="iframebaza" style="display:none;"> 
+			<button class="btn btn-primary btn-block closeiframe">Zamknij</button>
+			<iframe frameborder="0" width="100%" height="100%"></iframe>
+		</div>
+		<div id="iframedispatch" style="display:none;">
+			<button class="btn btn-primary btn-block closeiframe">Zamknij</button>
+			<iframe frameborder="0" width="100%" height="100%"></iframe>
+		</div>
+		<div class="btn-group">	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div id="mySidenav" class="sidenav text-center">
+							<a href="#" class="closebtn" onclick="closeNav();">&times;</a>
+							<button class="btn-sm btn-outline-warning mt-3 custom" id="mandatbtn">Wystaw fakturę</button>
+							<div class="spacer"></div>
+							<button class="btn-sm btn-danger custom" id="exit_gui">Zamknij</button>
+						</div>
+						<div class="pl-5" style="font-size:30px;cursor:pointer;margin-top:75px;" onclick="openNav()">&#9776;</div>				
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 right-color mt-1 offset-md-1" id="menumandat">
+						<div class="d-flex justify-content-md-center pb-2">
+							<input class="btn-block mt-2" id="mandat_reason" type="text" placeholder="Powód otrzymania faktury">
+						</div>
+						<div class="d-flex justify-content-md-center pb-2">
+							<input class="btn-block mt-2" id="mandat_amount" type="text" placeholder="Kwota faktury">
+						</div>
+						<button class="btn btn-block mt-2 btn-warning border border-light" style="margin-top: 24px !important;" id="sendmandat">Wystaw</button>						
+					</div>
+				</div>
+			</div>	 
+		</div>
+    </body>
+	
+	<script type="text/javascript">
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "200px";
+		}
+		function closeNav() {
+			$('#menujail').hide();
+			$('#menumandat').hide();
+			$('#iframedispatch').css('display', 'none');
+			document.getElementById("mySidenav").style.width = "0";
+		}
+		$(document).ready(function(){
+		  $("#NameInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		});
+		$("#exit_gui").click(function(){
+			$('.btn-group').css('display', 'none');
+			$('#mySidenav').css('width', '0');
+			$.post('http://Stinky_tabletems/NUIFocusOff', JSON.stringify({}));
+		});
+		$("#mandatbtn").click(function(){
+			$('#menujail').hide();
+			$('#menumandat').fadeIn(1000);
+		});	
+		$("#jailbtn").click(function(){
+			$('#menumandat').hide();
+			$('#menujail').fadeIn(1000);
+		});
+	$("#bazabtn").click(function () {
+		$('.btn-group').hide();
+		$('#iframebaza').show();
+	});
+	$("#dispatchbtn").click(function () {
+		$('.btn-group').hide();
+		$('#iframedispatch').show();
+	});
+	$('.closeiframe').click(function () {
+		$('#iframebaza').hide();
+		$('#iframedispatch').hide();
+		$('.btn-group').show();
+	});
+		$("#sendmandat").click(function(){
+			$.post('http://Stinky_tabletems/mandat', JSON.stringify({mandatreason: $("#mandat_reason").val(), mandatamount: $("#mandat_amount").val()}));
+			$('.btn-group').css('display', 'none')
+			$.post('http://Stinky_tabletems/NUIFocusOff', JSON.stringify({}));
+		});
+		$("#sendjail").click(function(){
+			$.post('http://Stinky_tabletems/jail', JSON.stringify({jailreason: $("#jail_reason").val(), jailtime: $("#jail_time").val(), jailgrzywna: $("#jail_grzywna").val()}));
+			$('.btn-group').css('display', 'none')
+			$.post('http://Stinky_tabletems/NUIFocusOff', JSON.stringify({}));
+		});
+		document.onkeyup = function (data) {
+			if (data.which == 27) { // Escape key
+				$('.btn-group').css('display', 'none')
+				$.post('http://Stinky_tabletems/NUIFocusOff', JSON.stringify({}));
+			}
+		};
+	</script>
+</html>

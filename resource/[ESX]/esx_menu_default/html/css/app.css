@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background: rgba(42, 189, 233, 0.75);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+.menu {
+  z-index: 9999999;
+	font-family: 'Barlow Condensed', sans-serif;
+	min-width: 250px;
+	color: #fff;
+	position: absolute;
+	opacity: 0.9;
+  text-shadow: 
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000,
+         0 0 5px #000,
+         0 0 5px #000,
+         0 0 5px #000;
+         -webkit-filter: drop-shadow(0px 0px 10px #000);
+         filter: drop-shadow(0px 0px 10px #000));
+}
+
+.menu.align-left {
+  left: 23;
+  top : 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-top-left {
+  left: 23;
+  top : 45; 
+}
+
+.menu.align-top {
+  left: 50%;
+  top : 45;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-top-right {
+  right: 23;
+  top  : 45;
+}
+
+.menu.align-right {
+  right: 23;
+  top  : 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-bottom-right {
+	right: 75;
+	bottom: 70;
+}
+
+.menu.align-bottom {
+  left  : 50%;
+  bottom: 45;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-bottom-left {
+  left  : 23;
+  bottom: 45;
+}
+
+.menu.align-center {
+  left : 50%;
+  top  : 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.menu .head {
+	background-color: rgba(24, 24, 24, 0.80);
+	border-radius: 6px;
+	margin-bottom: 6px;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	z-index: 9999999;
+	font-size: 18px;
+	font-weight: 500;
+  border: double 2px transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(#181818, #181818), radial-gradient(circle at top , #eac81f,#ff9100);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.menu .menu-items {
+  font-weight: 500;
+  max-height: 500px;
+  overflow-y: hidden;
+  border: double 2px transparent;
+  border-radius: 8px;
+  background-image: linear-gradient(#181818, #181818), radial-gradient(circle at top , #eac81f,#ff9100);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.menu .menu-items .menu-item {
+	padding: 3px 0 3px 0;
+	margin: 6px 6px 6px 6px;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+}
+
+.menu .menu-items .menu-item > div {
+  width           : 100%;
+}
+
+.menu .menu-items .menu-item > div.shortcut {
+  width           : auto;
+  font-size       : 17px;
+  color           : #ffff00;
+}
+
+.menu .menu-items .menu-item > img {
+  opacity         : 0.0;
+  position        : absolute;
+  width           : 28px;
+  height          : 28px;
+  top             : 6px;
+  left            : 5px;
+  -webkit-filter: drop-shadow(0px 0px 0.4px rgba(255, 255, 255,1));
+	filter: drop-shadow(0px 0px 0.4px rgba(255, 255, 255,1)));
+}
+
+.menu .menu-items .menu-item.selected {
+	border-radius: 5px;
+  text-shadow: 
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000,
+         0 0 5px #000,
+         0 0 5px #000;
+  background: linear-gradient(to right, #eac81f, #ff9100);
+}
+
+.menu .menu-items .menu-item.selected > div.shortcut {
+  color           : #ff0000;
+}
+
+.menu .menu-items .menu-item.selected > img {
+  opacity         : 1.0;
+}
+
+.menu .menu-items .menu-item.selected input {
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: transparent;
+  color           : #ffffff;
+  text-align      : center;
+  border          : none;
+  outline         : none;
+  width           : 20px;
+  text-shadow: 
+  -1px -1px 0px #000,
+   0px -1px 0px #000,
+   1px -1px 0px #000,
+  -1px  0px 0px #000,
+   1px  0px 0px #000,
+  -1px  1px 0px #000,
+   0px  1px 0px #000,
+   1px  1px 0px #000;
+}

@@ -1,0 +1,490 @@
+{
+  "reseau": "Wyspofon",
+  
+  "themeColor": "#303f9f",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useWebRTCVocal": true,
+  "RTCConfig": {
+    "iceServers": [{
+      "urls": ["turn:s01.codefather.eu:13478"],
+      "username": "wyspa",
+      "credential": "jebactuska"
+    }]
+  },
+
+  "background" : {
+    "Wyspofon": "default.jpg",
+    "Trains": "back001.jpg",
+    "Volcano": "back002.jpg",
+    "Arcadius": "back003.jpg",
+    "Cloudy": "back004.jpg",
+    "City": "back005.jpg",
+    "Industrial": "back006.jpg",
+    "Girl": "back007.jpg",
+    "Gangsta": "back008.jpg",
+    "Busted": "back009.jpg",
+    "Though": "back010.jpg",
+    "Własna tapeta": "URL"
+  },
+  "background_default": {
+    "label": "Wyspofon",
+    "value": "default.jpg"
+  },
+
+  "coque": {
+    "Samsung S8": "s8.png",
+    "iPhone X": "iphonex.png",
+    "Xiaomi Redmi": "xiaomi.png"
+  },
+  "coque_default": {
+    "label": "Samsung S8",
+    "value": "s8.png"
+  },
+
+  "serviceCall": [
+    {
+      "display": "Los Santos Police Department",
+      "backgroundColor": "#00008b",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "Stinky-alert:callNumber",
+          "type": {
+            "number": "police"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        },
+        {
+          "title": "Zadzwoń na komendę Mission Row",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "9111"
+          },
+          "icons": "fa-phone",
+          "color": "green"
+        },
+        {
+          "title": "Zadzwoń na komendę Vinewood",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "9112"
+          },
+          "icons": "fa-phone",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "display": "Emergency Medical Services",
+      "backgroundColor": "#ff0000",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "ambulance"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        },
+        {
+          "title": "Zadzwoń na szpital Pillbox",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "1121"
+          },
+          "icons": "fa-phone",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "display": "Los Santos Fire Department",
+      "backgroundColor": "#a52a2a",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "ambulance_extra"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Gas Donkey (Mechanik)",
+      "backgroundColor": "#ff8c00",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "mecano"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Moore Company Ltd (Taxi)",
+      "backgroundColor": "#ffd700",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "taxi"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Department of Correction",
+      "backgroundColor": "#003300",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "correction"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Apteka",
+      "backgroundColor": "#ff6666",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "pharmacy"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Biuro psychologów",
+      "backgroundColor": "#ee82ee",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "psycholog"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "CB Performance - komis",
+      "backgroundColor": "#1e90ff",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "komis"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "EPICDESK",
+      "backgroundColor": "#0099ff",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "lumberjack"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "GBS Cafe",
+      "backgroundColor": "#000000",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "gbs"
+          },
+        "icons": "fa-envelope",
+        "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Grande Diamond Casino",
+      "backgroundColor": "#ccccff",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "kasyno_gta"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Kancelaria prawna",
+      "backgroundColor": "#808000",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "law"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "KnuTimes",
+      "backgroundColor": "#00ff00",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "weazel"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Papa Garcia",
+      "backgroundColor": "#5f9f9f",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "papagarcia"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Pegasus Car Dealer Broker",
+      "backgroundColor": "#808080",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "broker"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "PFC",
+      "backgroundColor": "#aeea00",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "slaughterer"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Risk Zone",
+      "backgroundColor": "#ff1493",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "pj"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Rogers Recycling",
+      "backgroundColor": "#783c00",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "recycling"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Szkatulsky Patrol",
+      "backgroundColor": "#000000",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "security"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "Valentinetti's restaurant",
+      "backgroundColor": "#0008ff",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "restaurant"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "WyspaFM",
+      "backgroundColor": "#ff00ff",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "wyspafm"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "display": "4PSM",
+      "backgroundColor": "#006600",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_phone:send",
+          "type": {
+            "number": "tailor"
+          },
+          "icons": "fa-envelope",
+          "color": "orange"
+        }
+      ]
+    }
+  ],
+
+  "apps": [
+    {
+      "name": "Telefon",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "SMS",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Kontakty",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "Galeria",
+      "icons": "/html/static/img/icons_app/gallery.png",
+      "routeName": "gallery",
+      "inHomePage": true
+    },
+    {
+      "name": "Kamera",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo"
+    },
+    {
+      "name": "Bank",
+      "icons": "/html/static/img/icons_app/bank.png",
+      "routeName": "bank"
+    },
+    {
+      "name": "Dark Chat",
+      "icons": "/html/static/img/icons_app/tchat.png",
+      "routeName": "tchat"
+    },
+    {
+      "name": "Ustawienia",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre"
+    },
+    {
+      "name": "9GAG",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "9gag"
+    }
+  ]
+}

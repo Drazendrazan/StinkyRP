@@ -1,0 +1,5 @@
+RegisterCommand('propertyfix', function()
+    local ped = PlayerPedId()
+    SetEntityCoords(ped, -1042.47, -2745.98, 21.36)
+    TriggerServerEvent('esx_property:fix')
+end)
